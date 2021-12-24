@@ -1,0 +1,103 @@
+/*
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Imperial Script', cursive;
+    font-family: 'Signika Negative', sans-serif;
+*/
+/*
+    #000000 dark black
+    #3D0000 darkest red
+    #950101 darker red
+    #FF0000 red
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+/*Starts here: section Scroll with smooth scroll*/
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+/*Ends Here*/
+.one{
+    background-image: url('https://cdn.pixabay.com/photo/2018/05/06/07/55/cold-3378044_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two{
+    background-image: url('https://cdn.pixabay.com/photo/2020/01/26/18/52/porsche-4795520_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three{
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/22/17/22/porsche-911-3341697_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.four{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section
+h1{
+    padding: 1em 0;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1em;
+    color: #ff0000;
+    text-shadow: 0 0 1px white;
+    mix-blend-mode: difference;
+}
+h2{
+    padding: 1em 0;
+    text-align: center;
+    margin: 0 10%;
+    /* font-size: 300%; */
+    font-family: 'Imperial Script', cursive;
+    /* letter-spacing: 1em; */
+    /* color: #950101; */
+    mix-blend-mode: color-burn;
+}
+.grid{
+    margin: 0 20%;
+    display: grid;
+    width: 60%;
+    height: 60%;
+    grid-template-columns: 50% 50%;
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+    color: white;
+
+}
+.compare{
+    mix-blend-mode: normal;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+
+}
+.left{
+    border-right: solid 5px rgba(255,255,255,0.7);
+    text-align: center;
+}
+.right{
+    /* border-right: solid 1px ; */
+    text-align: center;
+}
+footer{
+    position: fixed;
+    top: 97vh;
+    right: 2vw;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,0.7);
+    font-family: 'Signika Negative', sans-serif;
+
+
+}
